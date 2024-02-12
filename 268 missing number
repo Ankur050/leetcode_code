@@ -10,3 +10,29 @@ public:
         return (range_sum-sum);
     }
 };
+
+
+
+                  ---------------------------------     end of this file ------------------------------------------------------
+
+#include<iostream>
+using namespace std ;
+int main(){
+    int n;
+    cin>>n;
+    int arr[n];
+    for(int i=0;i<n;i++){
+        cin>>arr[i];
+    }
+    // finding missing 
+    int sum =0;
+    int total=(n*(n+1))/2;
+    for(int j=0;j<n;j++){
+        sum+=arr[j];
+    }
+    int num=total-sum;
+    cout<<num<<endl;
+    cout<<sum<<endl;
+    
+    cout<<total<<endl;
+}
